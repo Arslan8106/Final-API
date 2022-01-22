@@ -56,7 +56,7 @@ def predict():
         predicted_dietplan = classifier.predict(final_features)
         output = predicted_dietplan[0]
 
-    return render_template('index.html', prediction_text='Predicted diet plan is $ {}'.format(output))
+    return output
 
 
 if __name__ == "__main__":
