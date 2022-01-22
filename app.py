@@ -16,7 +16,7 @@ def predict():
     For direct API calls trought request
     '''
     col_names = ['Age','Height', 'Weight', 'BMR', 'PAL', 'TEE', 'BMI','Disease', 'Diet_Plan']
-    dataset = pd.read_csv("Female diseases.csv",header=None, names=col_names)
+    dataset = pd.read_csv("Disease Data.csv",header=None, names=col_names)
     dataset
     feature_cols = ['Age', 'Height', 'Weight', 'BMR', 'PAL', 'TEE', 'BMI', 'Disease']
     X = dataset[feature_cols]
