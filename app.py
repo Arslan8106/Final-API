@@ -51,7 +51,7 @@ def predict():
         # tee = request.form.get("tee")
         # bmi = request.form.get("bmi")
         # disease = request.form.get("disease")
-        int_features = [float(x) for x in request.form.values()]
+        int_features = [float(x) for x in request.json.values()]
         final_features = [np.array(int_features)]
         predicted_dietplan = classifier.predict(final_features)
         output = predicted_dietplan[0]
